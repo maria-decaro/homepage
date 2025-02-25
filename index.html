@@ -1,11 +1,185 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" conen="width=device-width, initial-scale=1.0">
-        <title>Maria DeCaro</title>
-    </head>
-    <body>
-        <h1>Welcome!</h1>
-        <p>This is a test page for my homework!</p>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria DeCaro | Portfolio</title>
+
+    <!-- Meta Tags for Rich Link Previews -->
+    <meta property="og:title" content="Maria DeCaro | Portfolio">
+    <meta property="og:description" content="Explore my work, projects, and passions. Let's connect!">
+    <meta property="og:image" content="profile-image.jpg">
+    <meta property="og:url" content="https://your-website.com">
+    
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="hamburger" onclick="toggleNav()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#fun-facts">Fun Facts</a></li>
+            <li><a href="#education-profskills">Education & Professional Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#music">Music</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Maria DeCaro</h1>
+        <div class="location">
+          <p>New York, NY</p> </div>
+        <div class="button-group">
+            <a href="resume.pdf" class="btn">Download Resume</a>
+            <a href="mailto:mariasdecaro@gmail.com" class="btn">Email Me</a>
+            <a href="https://www.linkedin.com/in/maria-decaro/" target="_blank" class="btn">LinkedIn</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me!</h2>
+        <p>Hi! I'm Maria, a graduate student at Cornell Tech studying Connective Media. I specialize in data analytics, machine learning, data privacy, and project management. With experience at the FBI and a strong background in information systems, I am passionate about using technology to drive meaningful change.</p>
+        <img src="headshot.png" alt="A picture of me" class="profile-image">
+
+    </section>
+
+    <section id="fun-facts">
+        <h2>Fun Facts ☕✨</h2>
+        <ul>
+            <li>📍 Based in NYC but love to travel</li>
+            <li>👑 Current National Pageant Titleholder</li>
+            <li>❤️ Founder of my non-for-profit <i>"A Happy Heart is a Healthy Heart"</i> that raises awareness about heart disease</li>
+            <li>🎶 Favorite Artists: Taylor Swift & The Beatles</li>
+            <li>☕ Coffee Enthusiast - Here’s a random coffee for you! </li>
+        </ul>
+        <section id="coffee">
+            <img id="coffee-img" class="coffee-image" src="" alt="Random Coffee">
+            <span id="yum-message" class="yum-text">Looks super yum...right!</span>
+            <button id="new-coffee" class="btn">Get New Coffee</button>        
+        </section>        
+    </section>
+
+    <section id="education-profskills">
+        <h2>Education & Professional Skills</h2>
+        <h3>Education 🎓</h3>
+    
+        <div class="school">
+            <p><strong>Cornell Tech (Cornell University) 🐻❤️</strong><br>
+            <em>August 2024 - May 2026</em><br>
+            <strong>Jacobs Technion-Cornell Dual Master of Science Degrees</strong><br>
+            Studying Information Systems and Applied Information Science<br>
+            Concentration: Connective Media</p>
+        </div>
+    
+        <div class="school">
+            <p><strong>Syracuse University 🍊💙</strong><br>
+            <em>August 2022 - May 2024</em><br>
+            <strong>Bachelor of Science in Information Management & Technology</strong><br>
+            Concentrations: Data Analytics & Project Management</p>
+        </div>
+    
+        <h3>Professional Skills 💻</h3>
+    
+        <ul>
+            <li><strong>Coding Languages:</strong> Python, SQL, R</li>
+            <li><strong>Certifications:</strong>
+                <ul>
+                    <li>Certified Associate in Project Management (In-Progress)</li>
+                    <li>Career Essentials in Generative AI by MS and LinkedIn (2023)</li>
+                    <li>2019 MS Office Specialist: Excel Associate (2022)</li>
+                </ul>
+            </li>
+        </ul>
+    </section>      
+
+    <!-- Adding in and editing the projects happens here! -->
+    <section id="projects">
+        <h2>My Work</h2>
+        <div class="project">
+            <h3><strong>Cornell Tech Applied Machine Learning:</strong> Sentiment Analysis and Student Mental Health Project 🧠📊</h3>
+            <h4>Fall 2024</h4>
+            <ul style="text-align: left; list-style-position: inside;">
+                <li>Built a custom dataset from 16 university-focused Reddit subreddits across U.S. regions, applying sentiment analysis to track emotional trends during high-stress periods like midterms and finals.</li>
+                <li>Developed and evaluated ML models (logistic regression, deep learning, random forest, temporal modeling, clustering) to classify sentiment and identify mental health patterns, finding higher negative sentiment in California universities compared to other regions and proposing a framework for proactive university support.</li>
+            </ul>
+            <a href="AML_Final_Report.pdf" class="btn-small">View Report</a>
+        </div>
+        
+        <div class="project">
+            <h3><strong>Syracuse University Data Mining:</strong> Applied Machine Learning Loan Default Prediction Models 💰📈</h3>
+            <h4>Spring 2024</h4>
+            <ul style="text-align: left; list-style-position: inside;">
+                <li>Coded a Python program to predict loan default probability using bank data, applying machine learning models such as Random Forest (highest accuracy), Gradient Boosting Machine, and Linear Regression to assess financial risk.</li>
+                <li>Collaborated with teammates to implement SMOTE for imbalanced data handling, improving model performance and gaining insights into borrower risk factors, demonstrating how machine learning can aid banks in decision-making and risk management.</li>
+            </ul>
+            <a href="data_mining_final.pdf" class="btn-small">View Report Presentation</a>
+        </div>
+
+        <button id="view-more-projects" class="btn">View More Projects</button>
+        <div id="more-projects" class="hidden">
+            <div class="project">
+                <h3><strong>Cornell Tech Human-Computer Interaction:</strong> Product Design Project 🎨📱</h3>
+                <h4>Fall 2024</h4>
+                <ul style="text-align: left; list-style-position: inside;">
+                    <li>Collaborated with my team to design and prototype Trip Tuner, an application allowing users to customize their trip planning experience through personalized questionnaires.</li>
+                    <li>Applied Human-Computer Interaction (HCI) principles such as paper prototyping, user interviews, and iterative testing to ensure an intuitive, user-friendly, and accessible app design.</li>
+                    <li>Developed an interactive Figma prototype for Trip Tuner and encourage users to explore the app's flow and interface.</li>
+                </ul>
+                <a href="https://www.figma.com/proto/x0NF2pzCG3eEhROfRzOzbx/Travel-Planning-Assistant?node-id=0-1&t=OelXJfwcU7cAC0zX-1 " class="btn-small">View Figma Prototype</a>
+            </div>
+
+            <div class="project">
+                <h3>Cornell Tech Applied Machine Learning: Sentiment Analysis on Tweets 🐦📊</h3>
+                <h4>Fall 2024</h4>
+                <ul style="text-align: left; list-style-position: inside;">
+                    <li>Collaborated with my team to implement a hybrid sentiment analysis model on a dataset of labeled and unlabeled tweets, combining both supervised and unsupervised learning methods.</li>
+                    <li>Applied text preprocessing (cleaning, tokenization, vectorization) and trained Multinomial Naive Bayes and Logistic Regression classifiers on labeled data.</li>
+                    <li>Improved model accuracy to 95.4% by using unsupervised learning to label unlabeled tweets and augment the dataset with Logistic Regression predictions.</li>
+                </ul>
+                <a href="AML_Midterm_Report.pdf" class="btn-small">View Report</a>
+            </div>
+
+            <div class="project">
+                <h3>Cornell Tech Psychological and Social Aspects of Technology: Interview Bias and AI 🤖🗣️</h3>
+                <h4>Fall 2024</h4>
+                <ul style="text-align: left; list-style-position: inside;">
+                    <li>Replicated and expanded Martin and Nagao’s 1989 study to explore how AI-led interviews influence social desirability bias and self-reported honesty.</li>
+                    <li>Designed an experiment with human-led, AI-led, and computerized interview conditions to assess responses, including social desirability and GPA accuracy.</li>
+                    <li>Found that AI interviews led to higher social desirability bias, highlighting the psychological dynamics in AI recruitment.</li>
+                    </li>
+                </ul>
+                <a href="PyschSocial_Final.pdf" class="btn-small">View Report</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="music">
+        <h2>Now Playing 🎵</h2>
+        <iframe src="https://open.spotify.com/embed/track/6VsvKPJ4xjVNKpI8VVZ3SV" width="300" height="80" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+        <!-- The <iframe> tag used above is a new HTML element I explored. It allows embedding external content, like the Spotify track here, directly into the webpage. By setting the src to the track's URL, the content is displayed within the iframe. I also learned that attributes like width, height, and allow help control the size and permissions, such as enabling autoplay and encrypted media. It's a really efficient way to integrate external media without needing to redirect users away from your site. -->
+    </section>
+
+    <section id="contact">
+        <h2>Let's Connect! 🤝💬</h2>
+        <p>Interested in working together or just want to say hi? Reach out!</p>
+        <div class="button-group">
+            <a href="mailto:mariasdecaro@gmail.com" class="btn">Email Me</a>
+            <a href="https://www.linkedin.com/in/maria-decaro/" target="_blank" class="btn">LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- Link to External javascript -->
+    <script src="js/script.js"></script>
+</body>
 </html>

@@ -1,4 +1,4 @@
-// Toggling visibility of additional projects
+// Toggling visibility of additional projects- makes the more projects button to function properly
 document.getElementById('view-more-projects').addEventListener('click', function() {
     var moreProjects = document.getElementById('more-projects');
     var button = document.getElementById('view-more-projects');
@@ -17,6 +17,7 @@ function toggleNav() {
     nav.classList.toggle('active'); // Toggle the 'active' class to show/hide the menu
 }
 
+//This generates a new coffee image from Splash API when the button is clicked
 document.addEventListener("DOMContentLoaded", function () {
     const coffeeImg = document.getElementById("coffee-img");
     const newCoffeeBtn = document.getElementById("new-coffee");
@@ -45,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Event listener for button click to fetch a new image
     newCoffeeBtn.addEventListener("click", fetchCoffee);
 
-    // Show yum message on mouseenter 
+    // Show yum message on mouseenter on top of the coffee image and does extra credit #2
     coffeeImg.addEventListener("mouseenter", () => {
         yumMessage.style.opacity = 1; // Fade in
     });

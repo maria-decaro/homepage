@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function() {
     })
     .then(response => response.json()) 
     .then(data => {
-        //display the joke in the <span> element with id "dad-joke"
         document.getElementById("dad-joke").textContent = data.joke;
     })
     .catch(error => {

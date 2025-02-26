@@ -159,6 +159,13 @@ ul li {
     transform: scale(1.05);
 }
 
+@media (max-width: 400px) {
+    .btn {
+        padding: 10px 18px;
+        font-size: 0.9rem;
+    }
+}
+
 .btn-small {
     display: center;
     padding: 5px 10px;

@@ -77,10 +77,12 @@
     
         <ul>
             <li><a href="#about">About</a></li>
-            <li><a href="#projects"> Projects</a></li>
+            <!-- in the future should break out projects to be HCI/UI and Technical seperate!-->
+            <li><a href="#research">Research</a></li>
+            <li><a href="#tech_projects">Technical Projects</a></li>
+            <li><a href="#hci_projects">HCI/UI Projects</a></li>
             <li><a href="#education-profskills">Education & Professional Skills</a></li>
             <li><a href="#fun-facts">Fun Facts</a></li>
-            <li><a href="#music">Music</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -90,7 +92,7 @@
         <address class="location">
           <p>New York, NY</p> </address>
         <address class="button-group">
-            <a href="resume.pdf" class="btn">Download Resume</a>
+            <a href="Maria_DeCaro_Resume.pdf" class="btn">Download Resume</a>
             <a href="mailto:mariasdecaro@gmail.com" class="btn">Email Me</a>
             <a href="https://www.linkedin.com/in/maria-decaro/" target="_blank" class="btn">LinkedIn</a>
         </address>
@@ -103,8 +105,35 @@
 
     </section>
 
-    <section id="projects">
-        <h2>Technical and HCI/UI Projects</h2>
+    <section id="research">
+        <h2>Research</h2>
+        <div class="project">
+            <h3><strong>Cornell Tech STech Lab:</strong> AI and Petition Analytics Research 🤖📈</h3>
+            <h4>January 2025 - Present</h4>
+            <ul style="text-align: left; list-style-position: inside;">
+                <li>Contributed to a larger team project analyzing 700,000+ Change.org petitions to assess how AI tools influence user engagement and petition success, comparing pre- and post-AI adoption patterns.</li>
+                <li>Built classification pipelines using OpenAI models to label petitions by topic clusters (education, government, and public safety) and by scope (local vs. national), improving accuracy in identifying high-engagement issue areas over time.</li>
+                <li>Applied Jaccard distance to explore topic overlap and semantic relationships between petition categories; evaluated topic modeling approaches including BERTopic, ultimately prioritizing alternative clustering methods for better performance.</li>
+            </ul>
+             <!-- <a href="AML_Final_Report.pdf" class="btn-small">View Report</a>  -->
+        </div>
+    </section>
+
+    <!-- Adding in and editing the projects happens here! -->
+    <!-- when breaking out into HCI and technical use the class project to keep same formating or both - only need to change the id right here at the top of the seciton!-->
+
+    <section id="tech_projects">
+        <h2>Technical Projects</h2>
+        <div class="project">
+            <h3><strong>Cornell Tech Data Science in the Wild:</strong> Yelp Review Classification Project 📝🤖</h3>
+            <h4>Spring 2025</h4>
+            <ul style="text-align: left; list-style-position: inside;">
+                <li>Collaborated in a team of four to analyze nearly 7 million Yelp reviews across 40+ columns, leading data cleaning, preprocessing, and structured organization of review, user, and business metadata to support machine learning workflows.</li>
+                <li>Designed and implemented the top-performing models using OpenAI’s API for zero-shot, few-shot, and fine-tuned classification (achieving 75.5% accuracy), and supported tuning of a LightGBM model as the top non-AI baseline.</li>
+            </ul>
+               <!-- <a href="AML_Final_Report.pdf" class="btn-small">View Report</a> -->
+        </div>
+
         <div class="project">
             <h3><strong>Cornell Tech Applied Machine Learning:</strong> Sentiment Analysis and Student Mental Health Project 🧠📊</h3>
             <h4>Fall 2024</h4>
@@ -115,27 +144,17 @@
             <a href="AML_Final_Report.pdf" class="btn-small">View Report</a>
         </div>
         
-        <div class="project">
-            <h3><strong>Syracuse University Data Mining:</strong> Applied Machine Learning Loan Default Prediction Models 💰📈</h3>
-            <h4>Spring 2024</h4>
-            <ul style="text-align: left; list-style-position: inside;">
-                <li>Coded a Python program to predict loan default probability using bank data, applying machine learning models such as Random Forest (highest accuracy), Gradient Boosting Machine, and Linear Regression to assess financial risk.</li>
-                <li>Collaborated with teammates to implement SMOTE for imbalanced data handling, improving model performance and gaining insights into borrower risk factors, demonstrating how machine learning can aid banks in decision-making and risk management.</li>
-            </ul>
-            <a href="data_mining_final.pdf" class="btn-small">View Report Presentation</a>
-        </div>
-
-        <button id="view-more-projects" class="btn">View More Projects</button>
-        <div id="more-projects" class="hidden">
+        <button id="view-more-tech-projects" class="btn">View More Projects</button>
+        <div id="more-tech-projects" class="hidden">
             <div class="project">
-                <h3><strong>Cornell Tech Human-Computer Interaction:</strong> Product Design Project 🎨📱</h3>
-                <h4>Fall 2024</h4>
+                <h3>Cornell Tech Trust & Safety: Labeling Giveaway Scams on Bluesky 🤖💸 </h3>
+                <h4>Spring 2025</h4>
                 <ul style="text-align: left; list-style-position: inside;">
-                    <li>Collaborated with my team to design and prototype Trip Tuner, an application allowing users to customize their trip planning experience through personalized questionnaires.</li>
-                    <li>Applied Human-Computer Interaction (HCI) principles such as paper prototyping, user interviews, and iterative testing to ensure an intuitive, user-friendly, and accessible app design.</li>
-                    <li>Developed an interactive Figma prototype for Trip Tuner and encourage users to explore the app's flow and interface.</li>
+                    <li>Collaborated in a team of three using pair programming to build a rule-based labeler and design a multi-tiered content moderation policy for detecting fraudulent giveaway scams on Bluesky, integrating platform data and safety principles.</li>
+                    <li>Led bot detection work by testing an Isolation Forest model (ultimately ineffective) and implementing a threshold-based method using linear regression on account metrics, achieving 89.5% accuracy in classifying bot-like accounts.</li>
                 </ul>
-                <a href="https://www.figma.com/proto/x0NF2pzCG3eEhROfRzOzbx/Travel-Planning-Assistant?node-id=0-1&t=OelXJfwcU7cAC0zX-1 " class="btn-small">View Figma Prototype</a>
+                   <a href="https://github.com/RachMink/cs5342-spring2025-team7/tree/main/bluesky-assign3" class="btn-small">View Code</a> 
+                   <a href="https://drive.google.com/file/d/1r-C16cA2pF5BFdZ-2VKHx67okb9uZqFE/view?usp=sharing" class="btn-small">View Presentation Video</a>
             </div>
 
             <div class="project">
@@ -149,6 +168,55 @@
                 <a href="AML_Midterm_Report.pdf" class="btn-small">View Report</a>
             </div>
 
+            <div class="project">
+                <h3>Cornell Tech Building Start-Up Systems: NYC AlgoMatcher Website 🏙️🧠💻 </h3>
+                <h4>Spring 2025</h4>
+                <ul style="text-align: left; list-style-position: inside;">
+                    <li>Collaborated in a two-person coding team to develop a public-facing site that helps NYC residents understand which city-run algorithms may process their personal data, based on responses to a 17-question survey.</li>
+                    <li>Independently built the full survey page, dynamic progress bar, and navigation bar using React, Next.js, and Tailwind CSS, ensuring a responsive and polished user experience.</li>
+                    <li>Led front-end deployment on Vercel, resolving GitHub repo ownership and routing issues by reconfiguring the project structure and restoring proper App Router functionality.</li>
+                </ul>
+                   <a href="https://nyc-algo-matcher.vercel.app/" class="btn-small">Deployed Website</a> 
+                   <a href="https://github.com/maria-decaro/nyc-algo-matcher" class="btn-small">View Code</a>
+            </div>
+
+            <div class="project">
+                <h3><strong>Syracuse University Data Mining:</strong> Applied Machine Learning Loan Default Prediction Models 💰📈</h3>
+                <h4>Spring 2024</h4>
+                <ul style="text-align: left; list-style-position: inside;">
+                    <li>Coded a Python program to predict loan default probability using bank data, applying machine learning models such as Random Forest (highest accuracy), Gradient Boosting Machine, and Linear Regression to assess financial risk.</li>
+                    <li>Collaborated with teammates to implement SMOTE for imbalanced data handling, improving model performance and gaining insights into borrower risk factors, demonstrating how machine learning can aid banks in decision-making and risk management.</li>
+                </ul>
+                <a href="data_mining_final.pdf" class="btn-small">View Report Presentation</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="hci_projects">
+        <h2>HCI/UI Projects</h2>
+        <div class="project">
+            <h3><strong>Cornell Tech User Experience User Research:</strong> VibeCheck Communication Assistant 🗣️✨</h3>
+            <h4>Spring 2025</h4>
+            <ul style="text-align: left; list-style-position: inside;">
+                <li>Co-designed VibeCheck, a tone-refinement ai-based tool that enhances workplace communication by offering real-time suggestions and sentiment guidance within tools like Slack and Microsoft Teams.</li>
+                <li>Completed the full UX lifecycle with a partner across 10 assignments, including stakeholder interviews, affinity diagramming, persona creation, ideation, and heuristic evaluation, resulting in a low- and mid-fidelity interactive prototype.</li>
+            </ul>
+               <!-- <a href="" class="btn-small">View All Assignments</a> -->
+        </div>
+        
+        <div class="project">
+            <h3><strong>Cornell Tech Human-Computer Interaction:</strong> Product Design Project 🎨📱</h3>
+            <h4>Fall 2024</h4>
+            <ul style="text-align: left; list-style-position: inside;">
+                <li>Collaborated with my team to design and prototype Trip Tuner, an application allowing users to customize their trip planning experience through personalized questionnaires.</li>
+                <li>Applied Human-Computer Interaction (HCI) principles such as paper prototyping, user interviews, and iterative testing to ensure an intuitive, user-friendly, and accessible app design.</li>
+                <li>Developed an interactive Figma prototype for Trip Tuner and encourage users to explore the app's flow and interface.</li>
+            </ul>
+            <a href="https://www.figma.com/proto/x0NF2pzCG3eEhROfRzOzbx/Travel-Planning-Assistant?node-id=0-1&t=OelXJfwcU7cAC0zX-1 " class="btn-small">View Figma Prototype</a>
+        </div>
+        <button id="view-more-hci-projects" class="btn">View More Projects</button>
+        <div id="more-hci-projects" class="hidden">
             <div class="project">
                 <h3>Cornell Tech Psychological and Social Aspects of Technology: Interview Bias and AI 🤖🗣️</h3>
                 <h4>Fall 2024</h4>
@@ -231,6 +299,6 @@
     </section>
 
     <!-- Link to External javascript -->
-    <script src="js/script.js"></script>
+    <script src="js/script.js?v=1.0"></script>
 </body>
 </html>

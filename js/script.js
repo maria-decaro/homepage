@@ -1,21 +1,29 @@
-//Toggling visibility of additional projects- makes the more projects button to function properly
-document.getElementById('view-more-projects').addEventListener('click', function() {
-    var moreProjects = document.getElementById('more-projects');
-    var button = document.getElementById('view-more-projects');
+//toggle for more projects sections
+document.addEventListener("DOMContentLoaded", function () {
+  const hciBtn = document.getElementById("view-more-hci-projects");
+  const hciSection = document.getElementById("more-hci-projects");
 
-    moreProjects.classList.toggle('hidden');
-    
-    if (moreProjects.classList.contains('hidden')) {
-        button.textContent = 'View More Projects';
-    } else {
-        button.textContent = 'View Less Projects';
-    }
+  if (hciBtn && hciSection) {
+    hciBtn.addEventListener("click", function () {
+      hciSection.classList.toggle("hidden");
+      hciBtn.textContent = hciSection.classList.contains("hidden")
+        ? "View More Projects"
+        : "View Less Projects";
+    });
+  }
+
+  const techBtn = document.getElementById("view-more-tech-projects");
+  const techSection = document.getElementById("more-tech-projects");
+
+  if (techBtn && techSection) {
+    techBtn.addEventListener("click", function () {
+      techSection.classList.toggle("hidden");
+      techBtn.textContent = techSection.classList.contains("hidden")
+        ? "View More Projects"
+        : "View Less Projects";
+    });
+  }
 });
-
-function toggleNav() {
-    const nav = document.querySelector('nav');
-    nav.classList.toggle('active'); //Toggle the 'active' class to show/hide the menu
-}
 
 //this uses an API to generate a different dad joke each time someone loads on the website - this is an API that filfuls the assignemnt requirement of an API that does not require authentication!
 document.addEventListener("DOMContentLoaded", function() {

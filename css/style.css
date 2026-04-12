@@ -23,6 +23,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 120px;
 }
 
 body {
@@ -247,7 +248,6 @@ main {
     border: 1px solid var(--line);
     background: rgba(250, 253, 255, 0.82);
     box-shadow: 0 8px 24px rgba(23, 48, 84, 0.08);
-    scroll-margin-top: 120px;
 }
 
 p,

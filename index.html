@@ -85,10 +85,13 @@
                 <h3><strong>Cornell Tech STech Lab:</strong> AI and Petition Analytics Research 🤖📈</h3>
                 <h4>January 2025 - Present</h4>
                 <ul>
-                    <li>Contributed to a larger team project analyzing 700,000+ Change.org petitions to assess how AI tools influence user engagement and petition success, comparing pre- and post-AI adoption patterns.</li>
-                    <li>Built classification pipelines using OpenAI models to label petitions by topic clusters (education, government, and public safety) and by scope (local vs. national), improving accuracy in identifying high-engagement issue areas over time.</li>
-                    <li>Applied Jaccard distance to explore topic overlap and semantic relationships between petition categories; evaluated topic modeling approaches including BERTopic, ultimately prioritizing alternative clustering methods for better performance.</li>
+                    <li>Contributed to a larger team project analyzing 700,000+ (scaling to ~1M) Change.org petitions to assess how AI tools influence user engagement and petition success, comparing pre- and post-AI adoption patterns across large-scale petition datasets.</li>
+                    <li>Built classification pipelines using OpenAI APIs to summarize and embed petition text, labeling petitions by topic clusters (education, government, public safety) and scope (local vs. national), improving identification of high-engagement issue areas over time.</li>
+                    <li>Applied Jaccard distance to explore topic overlap and semantic relationships between petition categories; evaluated topic modeling approaches (e.g., BERTopic, MiniBatchKMeans), optimizing model selection (inertia, silhouette) and incorporating human validation to ensure interpretable, high-quality outputs.</li>
                 </ul>
+                <div class="project-actions">
+                    <a href="Change.org%20Research%20Steps.pdf" class="btn-small">Read More</a>
+                </div>
             </article>
         </section>
 
@@ -108,14 +111,15 @@
             </article>
 
             <article class="project">
-                <h3><strong>Cornell Tech Applied Machine Learning:</strong> Sentiment Analysis and Student Mental Health Project 🧠📊</h3>
-                <h4>Fall 2024</h4>
+                <h3><strong>Cornell Tech Applied Data Science:</strong> Demand Estimation &amp; Pricing Optimization 📊💰</h3>
+                <h4>Fall 2025</h4>
                 <ul>
-                    <li>Built a custom dataset from 16 university-focused Reddit subreddits across U.S. regions, applying sentiment analysis to track emotional trends during high-stress periods like midterms and finals.</li>
-                    <li>Developed and evaluated ML models (logistic regression, deep learning, random forest, temporal modeling, clustering) to classify sentiment and identify mental health patterns, finding higher negative sentiment in California universities compared to other regions and proposing a framework for proactive university support.</li>
+                    <li>Built and evaluated demand models (logistic regression, random forest, gradient boosting) to predict customer purchase behavior, iterating across models to better capture nonlinear price effects and improve accuracy (ROC-AUC up to 0.99).</li>
+                    <li>Designed a dynamic pricing strategy that estimates expected revenue across price options and selects optimal prices per customer, balancing profit with inventory constraints and competitor behavior in a simulated market.</li>
                 </ul>
                 <div class="project-actions">
-                    <a href="AML_Final_Report.pdf" class="btn-small">View Report</a>
+                    <a href="applied_data_science_final_project.pdf" class="btn-small">View Final Report</a>
+                    <a href="applied_data_science_final_code/index.html" class="btn-small">View Code &amp; Files</a>
                 </div>
             </article>
 
@@ -123,6 +127,18 @@
                 <button id="view-more-tech-projects" class="btn">View More Projects</button>
             </div>
             <div id="more-tech-projects" class="hidden">
+                <article class="project">
+                    <h3><strong>Cornell Tech Applied Machine Learning:</strong> Sentiment Analysis and Student Mental Health Project 🧠📊</h3>
+                    <h4>Fall 2024</h4>
+                    <ul>
+                        <li>Built a custom dataset from 16 university-focused Reddit subreddits across U.S. regions, applying sentiment analysis to track emotional trends during high-stress periods like midterms and finals.</li>
+                        <li>Developed and evaluated ML models (logistic regression, deep learning, random forest, temporal modeling, clustering) to classify sentiment and identify mental health patterns, finding higher negative sentiment in California universities compared to other regions and proposing a framework for proactive university support.</li>
+                    </ul>
+                    <div class="project-actions">
+                        <a href="AML_Final_Report.pdf" class="btn-small">View Report</a>
+                    </div>
+                </article>
+
                 <article class="project">
                     <h3>Cornell Tech Trust &amp; Safety: Labeling Giveaway Scams on Bluesky 🤖💸</h3>
                     <h4>Spring 2025</h4>
